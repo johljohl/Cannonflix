@@ -1,0 +1,197 @@
+/*-----Global------*/
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline; 
+ }
+:root { 
+    --main-black: black;
+    --main-blue: blue;
+    --main-green: green;
+    --main-gradient: linear-gradient( to right, var(--main-blue));
+ } 
+html {
+    font-family: Source Sans Pro, sans-serif;
+}
+body {
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+}
+h1 { font-size: 40px;
+     font-weight: 700;
+     color: var(--main-black);
+}
+h2 { font-size: 36px;
+    font-weight: 700;
+    color: var(--main-black);
+}     
+p, li { font-size: 16px;
+    font-weight: 400;
+    color: var(--main-black);
+}
+.btnWhite { 
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 135px;
+    background: #A93C40;
+    background: -webkit-linear-gradient(top, #A93C40, #BF6CE9);
+    background: -moz-linear-gradient(top, #A93C40, #BF6CE9);
+    background: linear-gradient(to bottom, #A93C40, #BF6CE9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btnGroup {
+    position: relative;
+    z-index: 1;
+}
+.whiteBG { 
+    background-color: white;
+    display: block;
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    border-radius: 10px;
+}
+.btnColor {
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.btnGreen { 
+    color: var(--main-green);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1;
+}
+.action {
+    color: var(--main-green);
+}
+
+/*-----Header/Nav------*/
+nav { 
+    display: inline-block;
+    width: 100%;
+ 
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    line-height: 100px;
+}
+nav ul{ 
+    float: right;
+    list-style: none;
+}
+nav ul li { 
+    display: inline-block;
+    margin-left: 50px;
+}
+header h1 { 
+    color: white;
+    width: 55%;
+    margin: 90px 0px 40px 0;
+}
+header p { 
+    color: white;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+.logo { 
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+  
+   
+}
+header {
+    background-image: url(img/Death-Wish-3-featured2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 900px;
+    width: 90%;
+    padding: 0 5%;
+}
+.ipad { 
+    display: none;
+}
+.iphone {
+    display: none;
+}
+.mobile { 
+    
+}
+label { 
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+#toggle { 
+    display: none;
+}
+.mobile ul { 
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+.mobile ul li { 
+    margin: 0;
+    width: 100%;
+    border-bottom:  1px;
+}
+#toggle:checked ~ ul {
+    display: block;
+}
+/*-----4K Movies------*/
+.new4kmovies {
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 160px;
+}
+.sectionTitles h2, .sectionTitles a {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+}
+.sectionTitles a { 
+    margin-left: 20px;
+    
+}
+.sectionTitles { 
+    margin: 50px o 20px 0;
+}
+.new4kmovies ul { 
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+.new4kmovies ul li img { 
+    width: 92%;
+    margin: 4%;
+
+}
