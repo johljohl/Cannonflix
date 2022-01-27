@@ -11,6 +11,7 @@
     --main-black: black;
     --main-blue: blue;
     --main-green: green;
+    --main-red: red;
     --main-gradient: linear-gradient( to right, var(--main-blue));
  } 
 html {
@@ -23,6 +24,7 @@ body {
 h1 { font-size: 40px;
      font-weight: 700;
      color: var(--main-black);
+     position: relative; top: 350px;
 }
 h2 { font-size: 36px;
     font-weight: 700;
@@ -31,6 +33,11 @@ h2 { font-size: 36px;
 p, li { font-size: 16px;
     font-weight: 400;
     color: var(--main-black);
+}
+p { font-size: 16px;
+    font-weight: 400;
+    color: var(--main-black);
+    position: relative; top: 150px;
 }
 .btnWhite { 
     display: inline-block;
@@ -50,7 +57,7 @@ p, li { font-size: 16px;
     -webkit-text-fill-color: transparent;
 }
 .btnGroup {
-    position: relative;
+    position: relative; top: 405px;
     z-index: 1;
 }
 .whiteBG { 
@@ -83,25 +90,40 @@ p, li { font-size: 16px;
     font-weight: 700;
     letter-spacing: 1;
 }
-.action {
-    color: var(--main-green);
+.action, .action h1{ 
+    color: var(--main-red);
+    margin-left: 3px;
 }
-video { 
-    position: relative; left: 350px;
-    border: 14px;
-    border-radius: 50px;
-    -webkit-box-shadow: -3px 0px 37px 17px #FF0000; 
-    box-shadow: -3px 0px 37px 17px #FF0000;
+.action h1 {
+    position: relative; top: 540px;
+    text-align: center;
+}
+.action a { 
+    position: relative; left: 380px; top: 570px;
+    margin: 2%;
     
 }
+video { 
+    position: absolute; left: 315px;
+    width: 50%;
+    border: 14px;
+    border-radius: 50px;
+    -webkit-box-shadow: -3px 0px 37px 17px rgba(56,40,255,0.58); 
+    box-shadow: -3px 0px 37px 17px rgba(56,40,255,0.58);
+}
+.tv{ 
+    position: absolute; left: 315px;
+    width: 55%;
+}
+   
 /*-----Header/Nav------*/
 nav { 
-    display: inline-block;
+    display: inline-block; 
     width: 100%;
  
 }
 nav a {
-    color: white;
+    color: red;
     text-decoration: none;
     line-height: 100px;
 }
@@ -119,6 +141,7 @@ header h1 {
     margin: 90px 0px 40px 0;
 }
 header p { 
+    position: relative; top: 150px;
     color: white;
     margin-bottom: 40px;
     opacity: 0.9;
@@ -140,40 +163,7 @@ header {
     width: 90%;
     padding: 0 5%;
 }
-.ipad { 
-    display: none;
-}
-.iphone {
-    display: none;
-}
-.mobile { 
-    
-}
-label { 
-    margin: 0 40px 0 0;
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 32px;
-    right: 0;
-}
-#toggle { 
-    display: none;
-}
-.mobile ul { 
-    text-align: center;
-    width: 100%;
-    display: none;
-}
-.mobile ul li { 
-    margin: 0;
-    width: 100%;
-    border-bottom:  1px;
-}
-#toggle:checked ~ ul {
-    display: block;
-}
+
 /*-----4K Movies------*/
 .new4kmovies {
     width: 90%;
@@ -208,4 +198,9 @@ label {
     box-shadow: 13px 1px 37px -2px rgba(56,40,255,0.58);
     
 
+}
+/*-----Footer------*/
+footer .copy { 
+    color: red;
+  
 }
