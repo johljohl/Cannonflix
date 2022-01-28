@@ -7,13 +7,7 @@
    font-size: 100%;
    vertical-align: baseline; 
  }
-:root { 
-    --main-black: black;
-    --main-blue: blue;
-    --main-green: green;
-    --main-red: red;
-    --main-gradient: linear-gradient( to right, var(--main-blue));
- } 
+
 html {
     font-family: Source Sans Pro, sans-serif;
 }
@@ -23,20 +17,20 @@ body {
 }
 h1 { font-size: 40px;
      font-weight: 700;
-     color: var(--main-black);
+     color: black;
      position: relative; top: 350px;
 }
 h2 { font-size: 36px;
     font-weight: 700;
-    color: var(--main-black);
+    color: black;
 }     
 p, li { font-size: 16px;
     font-weight: 400;
-    color: var(--main-black);
+    color: black;
 }
 p { font-size: 16px;
     font-weight: 400;
-    color: var(--main-black);
+    color: black;
     position: relative; top: 150px;
 }
 .btnWhite { 
@@ -84,14 +78,14 @@ p { font-size: 16px;
     border-radius: 10px;
 }
 .btnGreen { 
-    color: var(--main-green);
+    color: green;
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 1;
 }
 .action, .action h1{ 
-    color: var(--main-red);
+    color: red;
     margin-left: 3px;
 }
 .action h1 {
@@ -200,7 +194,10 @@ header {
 
 }
 /*-----Footer------*/
-footer .copy { 
+footer .copy{ 
     color: red;
+    display: block;
+    background-color: red;
+    position: absolute; left: 50%; bottom: 100%;
   
 }
